@@ -43,6 +43,10 @@ else
     then
         export DM='/usr/share/byond/bin/DreamMaker'
         return 0
+    elif [[ -n "$BYOND_MAJOR" && -n "$BYOND_MINOR" && -a "$HOME/BYOND-$BYOND_MAJOR.$BYOND_MINOR/byond/bin/DreamMaker" ]]
+    then
+        export DM="$HOME/BYOND-$BYOND_MAJOR.$BYOND_MINOR/byond/bin/DreamMaker"
+        return 0
     fi
 fi
 

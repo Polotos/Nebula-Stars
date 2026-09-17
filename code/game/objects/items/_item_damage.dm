@@ -82,7 +82,9 @@
 			if(hitsound)
 				playsound(hit_atom, hitsound, impact_volume, TRUE, -1)
 			else
-				playsound(hit_atom, 'sound/weapons/genhit.ogg', impact_volume, TRUE, -1)
+
+				playsound(hit_atom, 'sound/weapons/Genhit.ogg', impact_volume, TRUE, -1)
+
 		else
 			playsound(hit_atom, 'sound/weapons/throwtap.ogg', impact_volume, TRUE, -1)
 

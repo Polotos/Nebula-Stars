@@ -377,7 +377,7 @@
 	remove_component(component)
 	if(!silent)
 		to_chat(user, "<span class='notice'>You pop \the [component] out of the case, and slide it out.</span>")
-		playsound(src, 'sound/items/crowbar.ogg', 50, 1)
+		playsound(src, 'sound/items/Crowbar.ogg', 50, 1)
 		user.put_in_hands(component)
 	add_allowed_scanner(user.ckey)
 

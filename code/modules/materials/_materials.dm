@@ -158,7 +158,7 @@ var/global/list/materials_by_gas_symbol = list()
 	// Noise made when a simple door made of this material opens or closes.
 	var/dooropen_noise = 'sound/effects/stonedoor_openclose.ogg'
 	// Noise made when you hit structure made of this material.
-	var/hitsound = 'sound/weapons/genhit.ogg'
+	var/hitsound = 'sound/weapons/Genhit.ogg'
 	// Wallrot crumble message.
 	var/rotting_touch_message = "crumbles under your touch"
 	/// When a stack recipe doesn't specify a skill to use, use this skill.

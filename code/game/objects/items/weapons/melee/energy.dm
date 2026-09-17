@@ -8,7 +8,7 @@
 	atom_flags = ATOM_FLAG_NO_BLOOD
 	item_flags = ITEM_FLAG_IS_WEAPON
 	w_class = ITEM_SIZE_SMALL
-	hitsound = 'sound/weapons/genhit.ogg'
+	hitsound = 'sound/weapons/Genhit.ogg'
 
 	_base_attack_force = 3 // bonk
 	throw_speed        = 1

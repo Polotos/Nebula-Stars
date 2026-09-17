@@ -1,8 +1,9 @@
 /obj/structure/door
+
 	name                  = "door"
 	icon                  = 'icons/obj/doors/material_doors.dmi'
 	icon_state            = "metal"
-	hitsound              = 'sound/weapons/genhit.ogg'
+	hitsound              = 'sound/weapons/Genhit.ogg'
 	material_alteration   = MAT_FLAG_ALTERATION_NAME | MAT_FLAG_ALTERATION_DESC | MAT_FLAG_ALTERATION_COLOR
 	max_health            = 50
 	density               = TRUE
