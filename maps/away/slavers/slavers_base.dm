@@ -137,7 +137,7 @@
 	max_health = 100
 	natural_weapon = /obj/item/natural_weapon/punch
 	unsuitable_atmos_damage = 15
-	projectilesound = 'sound/weapons/laser.ogg'
+	projectilesound = 'sound/weapons/Laser.ogg'
 	projectiletype = /obj/item/projectile/beam
 	faction = "extremist abolitionists"
 	ai = /datum/mob_controller/abolitionist

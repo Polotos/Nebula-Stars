@@ -18,6 +18,19 @@ This will take a while to download, but it provides an easier method for updatin
 
 First-time installation should be fairly straightforward.  First, you'll need BYOND installed.  You can get it from [here](http://www.byond.com/).
 
+On Linux, the repository can install the same BYOND version used by CI into a
+versioned directory under your home directory. The compiler is deliberately
+not stored in the repository:
+
+    ./install-byond.sh
+    source "$HOME/BYOND-515.1647/byond/bin/byondsetup"
+    scripts/dm.sh nebula.dme
+
+Set `BYOND_MAJOR` and `BYOND_MINOR` before running the installer only when you
+need a version other than the CI default. Subsequent installer runs reuse the
+cached installation. `scripts/dm.sh` writes the compiler output to
+`build_log.txt` and creates `nebula.dmb` on success.
+
 This is a sourcecode-only release, so the next step is to compile the server files.  Open `nebula.dme` by double-clicking it, open the Build menu, and click compile.  This'll take a little while, and if everything's done right you'll get a message like this:
 
     saving nebula.dmb (DEBUG mode)

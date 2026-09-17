@@ -24,7 +24,7 @@
 	var/obj/item/sword = new new_type(null,material)
 	sword.SetName("\improper Dyrnwyn")
 	sword.atom_damage_type = BURN
-	sword.hitsound = 'sound/items/welder2.ogg'
+	sword.hitsound = 'sound/items/Welder2.ogg'
 	LAZYSET(sword.slowdown_per_slot, BP_L_HAND, 1)
 	LAZYSET(sword.slowdown_per_slot, BP_R_HAND, 1)
 	return sword
