@@ -17,15 +17,9 @@ else
   mkdir -p "$install_dir"
   cd "$install_dir"
   echo "Installing DreamMaker to $PWD"
-  primary_url="https://spacestation13.github.io/byond-builds/${BYOND_MAJOR}/${archive}"
-  fallback_url="https://raw.githubusercontent.com/spacestation13/byond-builds/gh-pages/public/${BYOND_MAJOR}/${archive}"
-  if ! curl --fail --location --retry 3 "$primary_url" \
-    -H "User-Agent: NebulaSS13/1.0 Continuous Integration" -o byond.zip;
-  then
-    echo "Primary BYOND mirror unavailable; trying GitHub directly."
-    curl --fail --location --retry 3 "$fallback_url" \
-      -H "User-Agent: NebulaSS13/1.0 Continuous Integration" -o byond.zip
-  fi
+
+  #curl "http://www.byond.com/download/build/${BYOND_MAJOR}/${BYOND_MAJOR}.${BYOND_MINOR}_byond_linux.zip" -H "User-Agent: NebulaSS13/1.0 Continuous Integration" -o byond.zip
+  curl "https://byond-builds.dm-lang.org/${BYOND_MAJOR}/${BYOND_MAJOR}.${BYOND_MINOR}_byond_linux.zip" -H "User-Agent: NebulaSS13/1.0 Continuous Integration" -o byond.zip
   unzip -o byond.zip
   cd byond
   make here

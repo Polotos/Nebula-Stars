@@ -1,6 +1,9 @@
 /mob/living/exosuit/premade/heavy
-	name = "Heavy exosuit"
+	name = "heavy exosuit"
 	desc = "A heavily armored combat exosuit."
+
+/mob/living/simple_animal/mob_mimic/exosuit/heavy
+	mimic_mob = /mob/living/exosuit/premade/heavy
 
 /obj/item/mech_component/manipulators/heavy/painted
 	color = COLOR_TITANIUM
@@ -90,10 +93,6 @@
 			"[WEST]"  = list("x" = 12, "y" = 8)
 		)
 	)
-
-	. = ..()
-
-/obj/item/mech_component/chassis/heavy/prebuild()
 	. = ..()
 	m_armour = new /obj/item/robot_parts/robot_component/armour/exosuit/combat(src)
 
@@ -107,6 +106,9 @@
 		head.color = COLOR_RED
 	if(body)
 		body.color = COLOR_DARK_GUNMETAL
+
+/mob/living/simple_animal/mob_mimic/exosuit/merc
+	mimic_mob = /mob/living/exosuit/premade/heavy/merc
 
 /mob/living/exosuit/premade/heavy/merc/spawn_mech_equipment()
 	install_system(new /obj/item/mech_equipment/mounted_system/taser(src), HARDPOINT_LEFT_HAND)
