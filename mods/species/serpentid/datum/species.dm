@@ -30,7 +30,7 @@
 	hidden_from_codex = TRUE
 	silent_steps = TRUE
 	butchery_data = /decl/butchery_data/humanoid/serpentid
-	speech_sounds = list('sound/voice/bug.ogg')
+	speech_sounds = list('sound/voice/Bug.ogg')
 	speech_chance = 2
 	warning_low_pressure = 50
 	hazard_low_pressure = -1

@@ -148,7 +148,7 @@
 	edge =  FALSE
 	attack_verb = list("hit")
 	material = /decl/material/solid/organic/plastic
-	active_hitsound = 'sound/weapons/genhit.ogg'
+	active_hitsound = 'sound/weapons/Genhit.ogg'
 	active_descriptor = "extended"
 	active_attack_verb = list("hit")
 	active_edge = FALSE

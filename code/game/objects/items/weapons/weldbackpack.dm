@@ -27,6 +27,12 @@
 /obj/item/weldingtool/weldpack/remove_tank(mob/user)
 	return FALSE
 
+/obj/item/weldingtool/weldpack/toggle_unscrewed(mob/user)
+	return FALSE
+
+/obj/item/weldingtool/weldpack/attempt_modify(obj/item/W, mob/user)
+	return FALSE
+
 /obj/item/weldingtool/weldpack/dropped(mob/user)
 	. = ..()
 	if(linked_pack)
